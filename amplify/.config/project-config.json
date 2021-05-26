@@ -1,5 +1,5 @@
 {
-  "projectName": "fastquote",
+  "projectName": "fastquote2",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
@@ -11,5 +11,7 @@
       "StartCommand": "npm.cmd run-script start"
     }
   },
-  "providers": ["awscloudformation"]
+  "providers": [
+    "awscloudformation"
+  ]
 }

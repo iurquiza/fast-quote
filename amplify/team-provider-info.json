@@ -1,26 +1,26 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-fastquote-dev-165532-authRole",
-      "UnauthRoleArn": "arn:aws:iam::022626042150:role/amplify-fastquote-dev-165532-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::022626042150:role/amplify-fastquote-dev-165532-authRole",
+      "AuthRoleName": "amplify-fastquote2-dev-170809-authRole",
+      "UnauthRoleArn": "arn:aws:iam::022626042150:role/amplify-fastquote2-dev-170809-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::022626042150:role/amplify-fastquote2-dev-170809-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-fastquote-dev-165532-deployment",
-      "UnauthRoleName": "amplify-fastquote-dev-165532-unauthRole",
-      "StackName": "amplify-fastquote-dev-165532",
-      "StackId": "arn:aws:cloudformation:us-east-1:022626042150:stack/amplify-fastquote-dev-165532/43534b00-bd69-11eb-ae02-0e762363e33d",
-      "AmplifyAppId": "dyqf6hare205p"
+      "DeploymentBucketName": "amplify-fastquote2-dev-170809-deployment",
+      "UnauthRoleName": "amplify-fastquote2-dev-170809-unauthRole",
+      "StackName": "amplify-fastquote2-dev-170809",
+      "StackId": "arn:aws:cloudformation:us-east-1:022626042150:stack/amplify-fastquote2-dev-170809/31933580-be34-11eb-a083-0ed9163b6ca9",
+      "AmplifyAppId": "dcxod84qo3mvm"
     },
     "categories": {
       "auth": {
-        "nachoferg": {}
+        "fastquote21be229fe": {}
       },
       "storage": {
-        "quotexonqh2jxybfd3bell4s2lzti5idev": {
-          "tableName": "quote-xonqh2jxybfd3bell4s2lzti5i-dev",
+        "Quote6w6nyz7tivfrzamxeikzy6mlcydev": {
+          "tableName": "Quote-6w6nyz7tivfrzamxeikzy6mlcy-dev",
           "region": "us-east-1",
-          "arn": "arn:aws:dynamodb:us-east-1:022626042150:table/quote-xonqh2jxybfd3bell4s2lzti5i-dev",
-          "streamArn": "arn:aws:dynamodb:us-east-1:022626042150:table/quote-xonqh2jxybfd3bell4s2lzti5i-dev/stream/2021-05-25T15:12:43.002",
+          "arn": "arn:aws:dynamodb:us-east-1:022626042150:table/Quote-6w6nyz7tivfrzamxeikzy6mlcy-dev",
+          "streamArn": "arn:aws:dynamodb:us-east-1:022626042150:table/Quote-6w6nyz7tivfrzamxeikzy6mlcy-dev/stream/2021-05-26T15:20:32.846",
           "partitionKeyName": "qid",
           "partitionKeyType": "S",
           "sortKeyName": "owner",
@@ -28,9 +28,9 @@
         }
       },
       "function": {
-        "fastquote4379a86a": {
-          "deploymentBucketName": "amplify-fastquote-dev-165532-deployment",
-          "s3Key": "amplify-builds/fastquote4379a86a-4f4d506f7275766d424e-build.zip"
+        "fastquote2c63bd347": {
+          "deploymentBucketName": "amplify-fastquote2-dev-170809-deployment",
+          "s3Key": "amplify-builds/fastquote2c63bd347-7a54447933377165664c-build.zip"
         }
       }
     }

@@ -11,7 +11,7 @@
     "env": {
       "Type": "String"
     },
-    "quoterest": {
+    "fastquote2api": {
       "Type": "String"
     }
   },
@@ -34,7 +34,9 @@
           "Statement": [
             {
               "Effect": "Allow",
-              "Action": ["execute-api:Invoke"],
+              "Action": [
+                "execute-api:Invoke"
+              ],
               "Resource": [
                 {
                   "Fn::Join": [
@@ -50,7 +52,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -80,7 +82,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -110,7 +112,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -140,7 +142,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -170,7 +172,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -200,7 +202,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -230,7 +232,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -260,7 +262,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -290,7 +292,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -320,7 +322,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -355,7 +357,9 @@
           "Statement": [
             {
               "Effect": "Allow",
-              "Action": ["execute-api:Invoke"],
+              "Action": [
+                "execute-api:Invoke"
+              ],
               "Resource": [
                 {
                   "Fn::Join": [
@@ -371,7 +375,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {
@@ -401,7 +405,7 @@
                       },
                       ":",
                       {
-                        "Ref": "quoterest"
+                        "Ref": "fastquote2api"
                       },
                       "/",
                       {

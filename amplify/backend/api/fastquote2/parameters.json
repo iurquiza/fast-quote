@@ -1,8 +1,11 @@
 {
-  "AppSyncApiName": "fastquote",
+  "AppSyncApiName": "fastquote2",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
   "AuthCognitoUserPoolId": {
-    "Fn::GetAtt": ["authnachoferg", "Outputs.UserPoolId"]
+    "Fn::GetAtt": [
+      "authfastquote21be229fe",
+      "Outputs.UserPoolId"
+    ]
   }
 }

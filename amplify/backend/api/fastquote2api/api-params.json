@@ -1,0 +1,45 @@
+{
+  "paths": [
+    {
+      "name": "/quote",
+      "lambdaFunction": "fastquote2c63bd347",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/GET"
+        ]
+      },
+      "policyResourceName": "/quote"
+    }
+  ],
+  "resourceName": "fastquote2api",
+  "apiName": "fastquote2api",
+  "functionArns": [
+    {
+      "lambdaFunction": "fastquote2c63bd347"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-fastquote2-dev-170809-authRole",
+    "unAuthRoleName": "amplify-fastquote2-dev-170809-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "fastquote2c63bd347",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

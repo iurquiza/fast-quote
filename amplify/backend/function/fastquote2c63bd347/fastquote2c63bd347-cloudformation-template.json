@@ -16,13 +16,13 @@
     "s3Key": {
       "Type": "String"
     },
-    "storagequotexonqh2jxybfd3bell4s2lzti5idevName": {
+    "storageQuote6w6nyz7tivfrzamxeikzy6mlcydevName": {
       "Type": "String",
-      "Default": "storagequotexonqh2jxybfd3bell4s2lzti5idevName"
+      "Default": "storageQuote6w6nyz7tivfrzamxeikzy6mlcydevName"
     },
-    "storagequotexonqh2jxybfd3bell4s2lzti5idevArn": {
+    "storageQuote6w6nyz7tivfrzamxeikzy6mlcydevArn": {
       "Type": "String",
-      "Default": "storagequotexonqh2jxybfd3bell4s2lzti5idevArn"
+      "Default": "storageQuote6w6nyz7tivfrzamxeikzy6mlcydevArn"
     }
   },
   "Conditions": {
@@ -55,12 +55,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "fastquote4379a86a",
+            "fastquote2c63bd347",
             {
               "Fn::Join": [
                 "",
                 [
-                  "fastquote4379a86a",
+                  "fastquote2c63bd347",
                   "-",
                   {
                     "Ref": "env"
@@ -81,7 +81,10 @@
           }
         },
         "Role": {
-          "Fn::GetAtt": ["LambdaExecutionRole", "Arn"]
+          "Fn::GetAtt": [
+            "LambdaExecutionRole",
+            "Arn"
+          ]
         },
         "Runtime": "nodejs14.x",
         "Layers": [],
@@ -94,12 +97,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "fastquoteLambdaRoleb7312371",
+            "fastquote2LambdaRole4db9a98e",
             {
               "Fn::Join": [
                 "",
                 [
-                  "fastquoteLambdaRoleb7312371",
+                  "fastquote2LambdaRole4db9a98e",
                   "-",
                   {
                     "Ref": "env"
@@ -115,16 +118,22 @@
             {
               "Effect": "Allow",
               "Principal": {
-                "Service": ["lambda.amazonaws.com"]
+                "Service": [
+                  "lambda.amazonaws.com"
+                ]
               },
-              "Action": ["sts:AssumeRole"]
+              "Action": [
+                "sts:AssumeRole"
+              ]
             }
           ]
         }
       }
     },
     "lambdaexecutionpolicy": {
-      "DependsOn": ["LambdaExecutionRole"],
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ],
       "Type": "AWS::IAM::Policy",
       "Properties": {
         "PolicyName": "lambda-execution-policy",
@@ -173,14 +182,14 @@
               ],
               "Resource": [
                 {
-                  "Ref": "storagequotexonqh2jxybfd3bell4s2lzti5idevArn"
+                  "Ref": "storageQuote6w6nyz7tivfrzamxeikzy6mlcydevArn"
                 },
                 {
                   "Fn::Join": [
                     "/",
                     [
                       {
-                        "Ref": "storagequotexonqh2jxybfd3bell4s2lzti5idevArn"
+                        "Ref": "storageQuote6w6nyz7tivfrzamxeikzy6mlcydevArn"
                       },
                       "index/*"
                     ]
@@ -201,7 +210,10 @@
     },
     "Arn": {
       "Value": {
-        "Fn::GetAtt": ["LambdaFunction", "Arn"]
+        "Fn::GetAtt": [
+          "LambdaFunction",
+          "Arn"
+        ]
       }
     },
     "Region": {
